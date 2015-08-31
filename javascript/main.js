@@ -1,5 +1,5 @@
 $(function() {
-    $('#timer').css({
+    $('#main-content').css({
         'position' : 'absolute',
         'left' : '50%',
         'top' : '50%',
