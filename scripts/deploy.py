@@ -22,7 +22,7 @@ def main(args) :
 			for filename in filenames :
 				if not fileInBlacklist(filename) :
 					matches.append(os.path.join(root, filename))
-			subPathFromMain = serverPathPrefix + root[len(mainDir):]
+			subPathFromMain = serverPathPrefix + root[len(mainDir) + 1:]
 			uploadFiles(subPathFromMain, matches)
 
 def fileInBlacklist(filename) :
