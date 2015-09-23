@@ -25,7 +25,7 @@ var Waffler = function (numOfDrops, dropHeight, dropWidth) {
 			fallingDrops[i].y += fallingDrops[i].speed; //Set the falling speed
 			if (fallingDrops[i].y > canvas.height) {  //Repeat the raindrop when it falls out of view
 				fallingDrops[i].y = -25 //Account for the image size
-				fallingDrops[i].x = Math.random() * 600;    //Make it appear randomly along the width
+				fallingDrops[i].x = Math.random() * canvas.width;    //Make it appear randomly along the width
 			}
         }
     }
