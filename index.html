@@ -2,37 +2,44 @@
 <html>
 <head>
 	<title>Countdown to Waffles</title>
-	<script src="javascript/jquery-2.1.4.min.js"></script>
 	<!-- PhotoSwipe -->
+<!--
+       ,--._______,-. 
+       ,','  ,    .  ,_`-. 
+      / /  ,' , _` ``. |  )       `-.. 
+     (,';'""`/ '"`-._ ` \/ ______    \\ 
+       : ,o.-`- ,o.  )\` -'      `---.)) 
+       : , d8b ^-.   '|   `.      `    `. 
+       |/ __:_     `. |  ,  `       `    \ 
+       | ( ,-.`-.    ;'  ;   `       :    ; 
+       | |  ,   `.      /     ;      :    \ 
+       ;-'`:::._,`.__),'             :     ; 
+      / ,  `-   `--                  ;     | 
+     /  \                   `       ,      | 
+    (    `     :              :    ,\      | 
+     \   `.    :     :        :  ,'  \    : 
+      \    `|-- `     \ ,'    ,-'     :-.-'; 
+      :     |`--.______;     |        :    : 
+       :    /           |    |         |   \ 
+       |    ;           ;    ;        /     ; 
+     _/--' |   -hrr-   :`-- /         \_:_:_| 
+   ,',','  |           |___ \ 
+   `^._,--'           / , , .) 
+                      `-._,-' 
+-->
 	<link rel="stylesheet" href="css/photoswipe.css"> 
 	<link rel="stylesheet" href="default-skin/default-skin.css"> 
-	<script src="javascript/photoswipe.min.js"></script> 
-	<script src="javascript/photoswipe-ui-default.min.js"></script> 
 
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script src="javascript/main.js"></script>
 </head>
 <body>
-<!--
-   __  __                                                                          __                 
-  |  \|  \                                                                        |  \                
- _| $$| $$_   ______    ______    ______   __    __   _______  __    __   _______ | $$   __   _______ 
-|   $$  $$ \ /      \  /      \  /      \ |  \  |  \ /       \|  \  |  \ /       \| $$  /  \ /       \
- \$$$$$$$$$$|  $$$$$$\|  $$$$$$\|  $$$$$$\| $$  | $$|  $$$$$$$| $$  | $$|  $$$$$$$| $$_/  $$|  $$$$$$$
-|   $$  $$ \| $$   \$$| $$  | $$| $$   \$$| $$  | $$ \$$    \ | $$  | $$| $$      | $$   $$  \$$    \ 
- \$$$$$$$$$$| $$      | $$__/ $$| $$      | $$__/ $$ _\$$$$$$\| $$__/ $$| $$_____ | $$$$$$\  _\$$$$$$\
-  | $$| $$  | $$       \$$    $$| $$       \$$    $$|       $$ \$$    $$ \$$     \| $$  \$$\|       $$
-   \$$ \$$   \$$        \$$$$$$  \$$       _\$$$$$$$ \$$$$$$$   \$$$$$$   \$$$$$$$ \$$   \$$ \$$$$$$$ 
-                                          |  \__| $$                                                  
-                                           \$$    $$                                                  
-                                            \$$$$$$                                                   
--->
 	<noscript>
 	 For full functionality of this site it is necessary to enable JavaScript.
 	 Here are the <a href="http://www.enable-javascript.com/" target="_blank">
 	 instructions how to enable JavaScript in your web browser</a>.
 	</noscript>
+	<canvas id="raining-pups"></canvas>
 	<div id="main-content" width="590">
 		<div>
 			<iframe id="timer" src="http://free.timeanddate.com/countdown/i4ts6b5x/n234/cf12/cm0/cu4/ct0/cs0/ca0/co0/cr0/ss0/cacfff/cpcfff/pct/tcfff/fn3/fs400/szw448/szh189/iso2015-10-04T12:00:00" allowTransparency="true" frameborder="0" width="590" height="153">>
@@ -89,5 +96,11 @@
 	    </div>
 	</div>
 
+	<script src="javascript/jquery-2.1.4.min.js"></script>
+	<script src="javascript/photoswipe.min.js"></script> 
+	<script src="javascript/photoswipe-ui-default.min.js"></script> 
+	<script src="javascript/main.js"></script>
+	<script src="javascript/falling-waffles.js"></script>
+	<script src="javascript/cheet.js"></script>
 </body>
 </html>

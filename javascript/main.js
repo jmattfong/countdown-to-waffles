@@ -43,5 +43,12 @@ $(function() {
 		var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 		gallery.init();
 	});
+    
+    cheet('w a f f l e s', function(){
+        alert('And so it begins');
+    
+        var waffler = new Waffler();
+        waffler.setup();
+    });
 });
 
