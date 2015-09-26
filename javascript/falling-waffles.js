@@ -89,4 +89,4 @@ var Waffler = function (numOfDrops, dropHeight, dropWidth) {
     }
 }
 
-module.exports = Waffler;
+//module.exports = Waffler;

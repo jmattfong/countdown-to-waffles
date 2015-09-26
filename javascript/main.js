@@ -44,11 +44,46 @@ $(function() {
 		gallery.init();
 	});
     
-    cheet('w a f f l e s', function(){
-        alert('And so it begins');
+    var lettersDiv = $('#letters');
+    var colours = ['#198AFF', '#1FE866', '#FFFD2F', '#E88C1A', '#FF2252']
     
-        var waffler = new Waffler();
-        waffler.setup();
+    cheet('w a f f l e s', {
+        next: function (str, key, num, seq) {
+            console.log('key pressed: ' + key);
+            console.log('progress: ' + num / seq.length);
+            console.log('seq: ' + seq.join(' '));
+            
+            var id = 'letter-' + num;
+            
+            var addLetter = '<span id="' + id + '" class="pop-up-letter" hidden>' + key + '</span>'
+            
+            lettersDiv.append(addLetter);
+            
+            var curLetter = $('#' + id);
+            
+            curLetter.css('color', colours[num % colours.length]);
+            curLetter.fadeIn('slow', 'swing');
+        },
+        fail: function () {
+            $('.pop-up-letter').remove();
+        },
+        done: function () {
+        
+            alert('And so it begins');
+            
+            var oneDay = 24*60*60*1000;
+            var wafflesDate = new Date('2015-10-04');
+            var currDate = new Date();
+            
+            var dateDiff = Math.round(Math.abs((wafflesDate.getTime() - currDate.getTime())/(oneDay)));
+            
+            var waffler = new Waffler(100 / dateDiff);
+            waffler.setup();
+            
+            setInterval(function(){
+                lettersDiv.fadeToggle((dateDiff * 200), 'swing')
+            }, (dateDiff * 200));
+        }
     });
 });
 
