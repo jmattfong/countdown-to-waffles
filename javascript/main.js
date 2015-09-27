@@ -68,9 +68,6 @@ $(function() {
             $('.pop-up-letter').remove();
         },
         done: function () {
-        
-            alert('And so it begins');
-            
             var oneDay = 24*60*60*1000;
             var wafflesDate = new Date('2015-10-04');
             var currDate = new Date();
